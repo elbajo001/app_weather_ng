@@ -1,0 +1,134 @@
+main {
+  width: 50vw;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #212121;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  /* box-shadow: 0 8px 8px -1px hsla(0, 0%, 30%, 0.2); */
+  box-shadow: 0 8px 16px -2px hsla(0, 0%, 0%, 0.3);
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 1.6rem;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgba(138, 138, 138, 0.15);
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.row {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+.row-input {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: .2rem;
+  color: var(--white1);
+}
+
+form .form-input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color1);
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white2);
+  transition: ease-in-out .3s;
+}
+
+form .form-input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+form .form-input:hover,
+form .form-input:active {
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--color2);
+}
+
+form .form-input option {
+  background: var(--white2);
+  color: var(--black2);
+}
+
+form .btn-submit {
+  width: 200px;
+  margin: auto;
+  margin-top: .8rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: var(--color1);
+  box-shadow: 0 8px 8px -2px hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+form .btn-submit:hover {
+  background: var(--color2);
+  color: var(--white2);
+}
+
+.bar-result {
+  padding: .5rem 2rem 1rem 2rem;
+  width: 100%;
+  background: #f2f2f2;
+  color: #212121;
+  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
+}
+
+.bar-result img {
+  width: 82px;
+  border-radius: 4px;
+}
+
+.bar-result h2 {
+  font-size: 5rem;
+}
+
+.bar-result h4 {
+  font-weight: 300;
+}
+
+.bar-result h3 {
+  color: var(--black3);
+}
+
+.bar-result h4 span {
+  color: var(--black3);
+}
+
+
+.bar-result .row-section-h {
+  display: flex;
+  gap: 1rem;
+}
+

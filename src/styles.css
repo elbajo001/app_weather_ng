@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --white1: #fff;
+  --white2: #f2f2f2;
+  --black1: #000;
+  --black2: #212121;
+  --black3: #424242;
+  --color1: #e3c800;
+  --color2: #f0a30a;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  cursor: default;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;  
+  background: linear-gradient(var(--color1), var(--color2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
